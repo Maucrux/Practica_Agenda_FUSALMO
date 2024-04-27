@@ -12,9 +12,9 @@ import { useState } from "react";
 import { useCalendarStore, useUiStore } from "../../hooks";
 
 export const CalendarPage = () => {
-  const { openDateModal } = useUiStore(); //TODO: usar el custom hook de uiStore
+  const { openDateModal } = useUiStore(); 
 
-  const { events, setActiveEvent } = useCalendarStore(); // TODO: uso de calendarstore
+  const { events, setActiveEvent } = useCalendarStore(); 
 
   const [lastView, setLastView] = useState(
     localStorage.getItem("LastView") || "agenda"
